@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/11/ramon-dino-mr-olympia-e1699131023342.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
+.content {
+    flex: 1;
+    padding: 15px;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

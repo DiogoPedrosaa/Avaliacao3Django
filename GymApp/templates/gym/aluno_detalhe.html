@@ -1,0 +1,33 @@
+
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Aluno</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/checartreinos.css' %}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>{{ aluno.nome }}</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>CPF:</strong> {{ aluno.cpf }}</p>
+                <p><strong>Objetivo:</strong> {{ aluno.objetivo }}</p>
+                <p><strong>Sexo:</strong> {{ aluno.sexo }}</p>
+                <p><strong>CEP:</strong> {{ aluno.cep }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'checar-treino' %}" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
